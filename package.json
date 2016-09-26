@@ -1,7 +1,7 @@
 {
   "name": "oaoa",
   "version": "0.0.1",
-  "description": "functional utility belt for plain old JS objects",
+  "description": "Functional utility belt for plain old JS objects",
   "main": "bundle.js",
   "jsnext:main": "index.js",
   "scripts": {
@@ -13,8 +13,9 @@
     "prepublish": "npm run build",
     "watch": "rollup -c rollup.watch.config.js -w"
   },
-  "author": "",
-  "license": "ISC",
+  "url" : "https://github.com/eteeselink/oaoa/issues",
+  "author": "Klets BV",
+  "license": "MIT",
   "devDependencies": {
     "buble": "^0.14.0",
     "rollup": "^0.36.0",
