@@ -1,6 +1,6 @@
 {
   "name": "oaoa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Functional utility belt for plain old JS objects",
   "main": "bundle.js",
   "jsnext:main": "index.js",
@@ -13,7 +13,7 @@
     "prepublish": "npm run build",
     "watch": "rollup -c rollup.watch.config.js -w"
   },
-  "url" : "https://github.com/eteeselink/oaoa/issues",
+  "url": "https://github.com/eteeselink/oaoa/issues",
   "author": "Klets BV",
   "license": "MIT",
   "devDependencies": {
