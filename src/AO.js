@@ -6,7 +6,7 @@ export function fromPairs(pairs) {
     }
 }
 
-export function map(func, array) {
+export function map(array, func) {
     let out = {};
     for(let i = 0; i !== array.length; i++) {
         const [key, value] = func(array[i]);

@@ -1,15 +1,15 @@
 import * as pairs from "./O/pairs";
 
-export function filter(func, obj) {
-    return pairs.filter(([key, value], obj) => func(value, key, obj), obj);
+export function filter(obj, func) {
+    return pairs.filter(obj, ([key, value], obj) => func(value, key, obj));
 }
 
-export function map(func, obj) {
-    return pairs.map(([key, value], obj) => [key, func(value, key, obj)], obj);
+export function map(obj, func) {
+    return pairs.map(obj, ([key, value], obj) => [key, func(value, key, obj)]);
 }
 
-export function sortBy(func, obj) {
-    return pairs.sortBy(([, value]) => func(value), obj);
+export function sortBy(obj, func) {
+    return pairs.sortBy(obj, ([, value]) => func(value));
 }
 
 export {pairs};

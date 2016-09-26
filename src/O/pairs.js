@@ -2,7 +2,7 @@ import {toPairs} from "../OA";
 import {fromPairs} from "../AO";
 
 // these functions treat an object like a sequence of [key, value] pairs.
-export function map(func, obj) {
+export function map(obj, func) {
     let out = {};
     for(let key in obj) {
         if(obj.hasOwnProperty(key)) {
@@ -14,7 +14,7 @@ export function map(func, obj) {
     return out;
 }
 
-export function filter(func, obj) {
+export function filter(obj, func) {
     let out = {};
     for(let key in obj) {
         if(obj.hasOwnProperty(key)) {
@@ -27,7 +27,7 @@ export function filter(func, obj) {
     return out;
 }
 
-export function sortBy(func, obj) {
+export function sortBy(obj, func) {
     const entries = toPairs(obj);
     entries.sort((kvpA, kvpB) => {
         const compA = func(kvpA);
